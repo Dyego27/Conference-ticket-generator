@@ -386,5 +386,7 @@ form .generate-ticket:hover{
 }
 
 @media (max-width:400px) {
-    
+    .form-content{
+        height: 620px;
+    }
 }
