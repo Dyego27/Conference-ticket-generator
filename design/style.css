@@ -270,7 +270,7 @@ form .generate-ticket:hover{
     padding: 0 7.5rem;
 }
 
-.display-data .ticket-container {
+.display-data .ticket-container{
     background-color: var(--neutral-900);
     background: url(assets/images/pattern-ticket.svg);
     background-size: contain;
@@ -280,5 +280,55 @@ form .generate-ticket:hover{
     padding: 1rem;
     margin: auto;
     position: relative;
+    z-index: 20;
     border-radius: .5rem;
+}
+
+.display-data .ticket-container .logo {
+    margin-bottom: .5rem;
+    font-size: 2.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.display-data .ticket-container .date {
+    color: var(--neutral-300);
+    padding-left: 3.5rem;
+    margin-bottom: 4rem;
+}
+
+.display-data .ticket-container .ticket-user{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.display-data .ticket-container .ticket-user img {
+    width: 65px;
+    border-radius: .75rem;
+}
+
+.display-data .ticket-container .ticket-user #display-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.display-data .ticket-container .ticket-user .github-username{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.display-data .ticket-container .ticket-user .github-username img {
+    width: 20px;
+}
+
+.display-data .ticket-container .ticket-number{
+    color: var(--neutral-300);
+    font-size: 1.75rem;
+    position: absolute;
+    right: 5px;
+    top: 36%;
+    transform: rotate(90deg);
 }
